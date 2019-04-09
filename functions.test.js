@@ -22,6 +22,10 @@ test('Adds two floating numbers', () => {
 });
 
 // Add indefinite amount of numbers
-test('Adds 4 - 2 to equal 2', () => {
-  expect(functions.indefiniteAddNumber(4, 2)).toBeDefined()
+test('Adds 1 + 2 + 3 + 4 to equal 10', () => {
+  expect(functions.indefiniteAddNumber(1, 2, 3, 4)).toBeDefined()
+});
+
+test('Adds 1 + 2 + 3 + 4 to equal 10', () => {
+  expect(functions.indefiniteAddNumber(1, 2, 3, 4)).toBe(10)
 });

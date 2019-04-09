@@ -13,8 +13,12 @@ const functions = {
     return a + b
   },
 
-  indefiniteAddNumber: function() {
-    return 'me'
+  indefiniteAddNumber: function(...num) {
+    let result = 0;
+    for(i = 0; i < num.length; i++) {
+      result += num[i];
+    }
+    return result
   }
 }
 
