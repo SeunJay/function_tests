@@ -1,5 +1,6 @@
 const functions = require('./functions')
 
+// Add two numbers
 test('Adds 2 + 2 to equal 4', () => {
   expect(functions.add(2, 2)).toBe(4 )
 });
@@ -18,4 +19,9 @@ test('There are more than 2 numbers passed in', () =>{
 
 test('Adds two floating numbers', () => {
   expect(functions.add(0.2, 0.3)).toBeCloseTo(0.5, 5)
+});
+
+// Add indefinite amount of numbers
+test('Adds 4 - 2 to equal 2', () => {
+  expect(functions.indefiniteAddNumber(4, 2)).toBeDefined()
 });

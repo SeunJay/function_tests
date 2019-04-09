@@ -1,5 +1,6 @@
 const functions = {
   add: function(a, b){
+
     if(arguments.length === 0) {
       return "Arguments required";
     } else if(arguments.length > 2){
@@ -10,7 +11,9 @@ const functions = {
       return "Please enter two valid numbers";
     }
     return a + b
-  }
+  },
+
+  
 }
 
 module.exports = functions;
