@@ -17,5 +17,5 @@ test('There are more than 2 numbers passed in', () =>{
 });
 
 test('Adds two floating numbers', () => {
-  expect(functions.add(0.2, 0.3)).toBeCloseTo(0.3, 5)
+  expect(functions.add(0.2, 0.3)).toBeCloseTo(0.5, 5)
 });
