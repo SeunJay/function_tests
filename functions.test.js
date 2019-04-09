@@ -6,4 +6,12 @@ test('Adds 2 + 2 to equal 4', () => {
 
 test('Adds "2" + "3" to return "Please enter two valid numbers"', () => {
   expect(functions.add("2", "3")).toBe("Please enter two valid numbers")
-})
+});
+
+test('No arguments passed in', () => {
+  expect(functions.add()).toBe("Arguments required")
+});
+
+test('There are more than 2 numbers passed in', () =>{
+  expect(functions.add(1,2,3,4,5)).toBe("Please entered just two valid numbers");
+});
