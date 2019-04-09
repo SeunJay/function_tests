@@ -37,3 +37,7 @@ test('No parameters passed in', () => {
 test('Arguments that are not numbers should return "Please enter only numbers"', () => {
   expect(functions.indefiniteAddNumber('1', '2', [1, 2, 3], {a: 2})).toBe("Please enter only numbers")
 });
+
+test('Adds 1.5 + 2.3 + 3.04 + 4.1 to equal 10', () => {
+  expect(functions.indefiniteAddNumber(1.5, 2.3, 3.04, 4.1)).toBeCloseTo(10.94)
+});
