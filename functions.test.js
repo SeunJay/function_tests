@@ -29,3 +29,7 @@ test('Adds 1 + 2 + 3 + 4 to equal 10', () => {
 test('Adds 1 + 2 + 3 + 4 to equal 10', () => {
   expect(functions.indefiniteAddNumber(1, 2, 3, 4)).toBe(10)
 });
+
+test('No parameters passed in', () => {
+  expect(functions.indefiniteAddNumber()).toBe('Numbers required as arguments')
+});
