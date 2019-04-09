@@ -33,3 +33,7 @@ test('Adds 1 + 2 + 3 + 4 to equal 10', () => {
 test('No parameters passed in', () => {
   expect(functions.indefiniteAddNumber()).toBe('Numbers required as arguments')
 });
+
+test('Arguments that are not numbers should return "Please enter only numbers"', () => {
+  expect(functions.indefiniteAddNumber('1', '2', [1, 2, 3], {a: 2})).toBe("Please enter only numbers")
+});
