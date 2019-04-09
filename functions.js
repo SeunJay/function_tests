@@ -13,7 +13,9 @@ const functions = {
     return a + b
   },
 
-  
+  indefiniteAddNumber: function() {
+    return 'me'
+  }
 }
 
 module.exports = functions;
