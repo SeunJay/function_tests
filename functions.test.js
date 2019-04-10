@@ -47,3 +47,7 @@ test('Adds 1.5 + 2.3 + 3.04 + 4.1 to equal 10', () => {
 test('Check to see that subtract function is defined', () => {
   expect(functions.subtract(5, 3)).toBeDefined()
 });
+
+test('Subtract 3 from 5 to equal 2', () => {
+  expect(functions.subtract(5, 3)).toBe(2)
+});
