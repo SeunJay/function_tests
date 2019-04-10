@@ -44,10 +44,9 @@ const functions = {
   indefiniteMultiplyNumber: function(...num){
     let result = 1;
 
-    // for(i = 0; i < num.length; i++) {
-      
-    //   result *= num[i];
-    // }
+    for(i = 0; i < num.length; i++) {
+      result *= num[i];
+    }
     return result
     
   }

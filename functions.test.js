@@ -74,6 +74,12 @@ test('Check to see that indefiniteMuliplyNumber function is defined', () => {
   expect(functions.indefiniteMultiplyNumber()).toBeDefined()
 });
 
+test('Multiply 1, 2, 3, 4, 5, 0', () => {
+  expect(functions.indefiniteMultiplyNumber(1, 2, 3, 4, 5, 0)).toBe(0)
+});
+
+
+
 
 
 
