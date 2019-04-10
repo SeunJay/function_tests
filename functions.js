@@ -55,6 +55,10 @@ const functions = {
     }
     return result
     
+  },
+
+  divideNumber: function(a, b){
+    return a / b
   }
 }
 
