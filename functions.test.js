@@ -41,3 +41,9 @@ test('Arguments that are not numbers should return "Please enter only numbers"',
 test('Adds 1.5 + 2.3 + 3.04 + 4.1 to equal 10', () => {
   expect(functions.indefiniteAddNumber(1.5, 2.3, 3.04, 4.1)).toBeCloseTo(10.94)
 });
+
+// Subtract two numbers 
+
+test('Subtract 5 from 3 to equal 2', () => {
+  expect(functions.subtract(5, 3)).toBeDefined()
+});
