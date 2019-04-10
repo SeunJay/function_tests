@@ -105,6 +105,12 @@ test('Arguments that are not numbers should return "Please enter only numbers"',
   expect(functions.divideNumber('1', '2', [1, 2])).toBe("Invalid input: Please enter just two valid numbers")
 });
 
+test('Divide 4 by 0 to equal Infinity', () => {
+  expect(functions.divideNumber(4, 0)).toBe(Infinity);
+});
+
+
+
 
 
 
