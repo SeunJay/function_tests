@@ -58,7 +58,10 @@ const functions = {
   },
 
   divideNumber: function(a, b){
-    if(arguments.length > 2) return "Please enter just two valid numbers"
+    if(arguments.length > 2) return "Invalid input: Please enter just two valid numbers";
+    if(typeof a !== 'number' || typeof b !== 'number') {
+      return "Invalid input: Please enter just two valid numbers"
+    }
     return a / b
   }
 }
