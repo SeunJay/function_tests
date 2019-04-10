@@ -68,4 +68,30 @@ test('Subtract two floating numbers', () => {
   expect(functions.subtract(-0.304, -0.1003)).toBe(-0.2037)
 });
 
+// Subtract two numbers 
+
+test('Check to see that indefiniteMuliplyNumber function is defined', () => {
+  expect(functions.indefiniteMultiplyNumber()).toBeDefined()
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
