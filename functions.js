@@ -44,6 +44,8 @@ const functions = {
   indefiniteMultiplyNumber: function(...num){
     let result = 1;
 
+    if(arguments.length === 0) return 'Numbers required as arguments';
+
     for(i = 0; i < num.length; i++) {
       result *= num[i];
     }
