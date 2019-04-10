@@ -90,7 +90,11 @@ test('Arguments that are not numbers should return "Please enter only numbers"',
 // Divide two numbers
 
 test('Check to see that divideNumber function is defined', () => {
-  expect(functions.divdeNumber()).toBeDefined();
+  expect(functions.divideNumber(4, 2)).toBeDefined();
+});
+
+test('Divide 4 by 2 to equal 2', () => {
+  expect(functions.divideNumber(4, 2)).toBe(2);
 });
 
 
