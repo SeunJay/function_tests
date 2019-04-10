@@ -51,3 +51,7 @@ test('Check to see that subtract function is defined', () => {
 test('Subtract 3 from 5 to equal 2', () => {
   expect(functions.subtract(5, 3)).toBe(2)
 });
+
+test('No arguments passed in', () => {
+  expect(functions.subtract()).toBe("Numbers required as arguments")
+});

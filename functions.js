@@ -28,6 +28,10 @@ const functions = {
   },
 
   subtract: function(x, y){
+    if(arguments.length === 0) {
+      return "Numbers required as arguments"
+    } 
+    
     return x - y
   }
 }
