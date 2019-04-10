@@ -44,6 +44,6 @@ test('Adds 1.5 + 2.3 + 3.04 + 4.1 to equal 10', () => {
 
 // Subtract two numbers 
 
-test('Subtract 5 from 3 to equal 2', () => {
+test('Check to see that subtract function is defined', () => {
   expect(functions.subtract(5, 3)).toBeDefined()
 });

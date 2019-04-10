@@ -25,6 +25,10 @@ const functions = {
       result += num[i];
     }
     return result
+  },
+
+  subtract: function(x, y){
+    return x - y
   }
 }
 
