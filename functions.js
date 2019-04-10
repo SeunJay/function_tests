@@ -4,7 +4,7 @@ const functions = {
     if(arguments.length === 0) {
       return "Arguments required";
     } else if(arguments.length > 2){
-      return "Please entered just two valid numbers";
+      return "Please enter just two valid numbers";
     }
 
     if(typeof a !== 'number' || typeof b !== 'number') {
@@ -29,8 +29,10 @@ const functions = {
 
   subtract: function(x, y){
     if(arguments.length === 0) {
-      return "Numbers required as arguments"
-    } 
+      return "Numbers required as arguments";
+    } else if(arguments.length > 2){
+      return "Please enter just two valid numbers";
+    }
     
     return x - y
   }

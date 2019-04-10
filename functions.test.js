@@ -14,7 +14,7 @@ test('No arguments passed in', () => {
 });
 
 test('There are more than 2 numbers passed in', () =>{
-  expect(functions.add(1,2,3,4,5)).toBe("Please entered just two valid numbers");
+  expect(functions.add(1,2,3,4,5)).toBe("Please enter just two valid numbers");
 });
 
 test('Adds two floating numbers', () => {
@@ -55,3 +55,9 @@ test('Subtract 3 from 5 to equal 2', () => {
 test('No arguments passed in', () => {
   expect(functions.subtract()).toBe("Numbers required as arguments")
 });
+
+test('There are more than 2 numbers passed in', () => {
+  expect(functions.subtract(2, 3, 3, 4)).toBe("Please enter just two valid numbers")
+});
+
+
