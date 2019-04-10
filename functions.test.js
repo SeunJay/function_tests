@@ -60,4 +60,8 @@ test('There are more than 2 numbers passed in', () => {
   expect(functions.subtract(2, 3, 3, 4)).toBe("Please enter just two valid numbers")
 });
 
+test('Subtract "2" from "3" to return "Please enter two valid numbers"', () => {
+  expect(functions.subtract("3", [1,2], {}, true)).toBe("Please enter just two valid numbers")
+});
+
 

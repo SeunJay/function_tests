@@ -33,6 +33,10 @@ const functions = {
     } else if(arguments.length > 2){
       return "Please enter just two valid numbers";
     }
+
+    if(typeof x !== 'number' || typeof y !== 'number') {
+      return "Please enter just two valid numbers";
+    }
     
     return x - y
   }
