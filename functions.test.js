@@ -49,7 +49,7 @@ test('Check to see that subtract function is defined', () => {
 });
 
 test('Subtract 3 from 5 to equal 2', () => {
-  expect(functions.subtract(5, 3)).toBe(2)
+  expect(functions.subtract(0, 3)).toBe(-3)
 });
 
 test('No arguments passed in', () => {
@@ -62,6 +62,10 @@ test('There are more than 2 numbers passed in', () => {
 
 test('Subtract "2" from "3" to return "Please enter two valid numbers"', () => {
   expect(functions.subtract("3", [1,2], {}, true)).toBe("Please enter just two valid numbers")
+});
+
+test('Subtract two floating numbers', () => {
+  expect(functions.subtract(-0.304, -0.1003)).toBe(-0.2037)
 });
 
 
