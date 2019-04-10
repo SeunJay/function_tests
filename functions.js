@@ -63,7 +63,11 @@ const functions = {
       return "Invalid input: Please enter just two valid numbers"
     }
     return a / b
-  }
+  },
+
+  // stringConcat: function(str1, str2){
+  //   return str1 + str2
+  // }
 }
 
 module.exports = functions;

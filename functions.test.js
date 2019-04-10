@@ -109,6 +109,10 @@ test('Divide 4 by 0 to equal Infinity', () => {
   expect(functions.divideNumber(4, 0)).toBe(Infinity);
 });
 
+test('Check to see that stringConcat function is defined', () => {
+  expect(functions.stringConcat()).toBeDefined()
+})
+
 
 
 
