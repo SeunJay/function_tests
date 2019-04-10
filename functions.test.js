@@ -97,6 +97,12 @@ test('Divide 4 by 2 to equal 2', () => {
   expect(functions.divideNumber(4, 2)).toBe(2);
 });
 
+test('There are more than 2 numbers passed in', () => {
+  expect(functions.divideNumber(2, 3, 3, 4)).toBe("Please enter just two valid numbers")
+});
+
+
+
 
 
 

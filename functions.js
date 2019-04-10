@@ -58,6 +58,7 @@ const functions = {
   },
 
   divideNumber: function(a, b){
+    if(arguments.length > 2) return "Please enter just two valid numbers"
     return a / b
   }
 }
