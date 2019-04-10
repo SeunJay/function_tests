@@ -87,6 +87,14 @@ test('Arguments that are not numbers should return "Please enter only numbers"',
   expect(functions.indefiniteMultiplyNumber('1', '2', [1, 2, 3], {a: 2})).toBe("Invalid input: Please enter only numbers")
 });
 
+// Divide two numbers
+
+test('Check to see that divideNumber function is defined', () => {
+  expect(functions.divdeNumber()).toBeDefined();
+});
+
+
+
 
 
 
