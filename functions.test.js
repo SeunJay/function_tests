@@ -68,7 +68,7 @@ test('Subtract two floating numbers', () => {
   expect(functions.subtract(-0.304, -0.1003)).toBe(-0.2037)
 });
 
-// Subtract two numbers 
+// Multiply indefinite amount of numbers 
 
 test('Check to see that indefiniteMuliplyNumber function is defined', () => {
   expect(functions.indefiniteMultiplyNumber()).toBeDefined()
@@ -81,6 +81,10 @@ test('Multiply 1, 2, 3, 4, 5', () => {
 
 test('No parameters passed in', () => {
   expect(functions.indefiniteMultiplyNumber()).toBe('Numbers required as arguments');
+});
+
+test('Arguments that are not numbers should return "Please enter only numbers"', () => {
+  expect(functions.indefiniteMultiplyNumber('1', '2', [1, 2, 3], {a: 2})).toBe("Invalid input: Please enter only numbers")
 });
 
 

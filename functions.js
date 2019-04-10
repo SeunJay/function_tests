@@ -47,6 +47,10 @@ const functions = {
     if(arguments.length === 0) return 'Numbers required as arguments';
 
     for(i = 0; i < num.length; i++) {
+
+      if(typeof num[i] !== 'number') {
+        return "Invalid input: Please enter only numbers"
+      }
       result *= num[i];
     }
     return result
