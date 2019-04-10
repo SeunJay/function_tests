@@ -109,9 +109,25 @@ test('Divide 4 by 0 to equal Infinity', () => {
   expect(functions.divideNumber(4, 0)).toBe(Infinity);
 });
 
+// Concatenate two strings
+
 test('Check to see that stringConcat function is defined', () => {
   expect(functions.stringConcat()).toBeDefined()
-})
+});
+
+test('Joins "Seun" and "Jay" to return "SeunJay"', () => {
+  expect(functions.stringConcat("Seun", "Jay")).toBe("SeunJay")
+});
+
+test('There are more than 2 string passed in', () => {
+  expect(functions.stringConcat("Seun", "Jay", "Ope", "Michael")).toBe("Invalid input: Please enter just two strings")
+});
+
+test('Arguments that are not strings should return ""Invalid input: Please enter just two strings""', () => {
+  expect(functions.stringConcat("Seun, 1")).toBe("Invalid input: Please enter just two strings");
+});
+
+
 
 
 

@@ -66,7 +66,12 @@ const functions = {
   },
 
   stringConcat: function(str1, str2){
-    return str1 + str2
+    let a = str1;
+    let b = str2;
+    if(arguments.length > 2) return "Invalid input: Please enter just two strings";
+    if(typeof a !== 'string' || typeof b !== 'string') return "Invalid input: Please enter just two strings";
+
+    return str1 + str2 
   }
 }
 
