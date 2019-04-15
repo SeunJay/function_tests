@@ -74,6 +74,20 @@ const functions = {
     if(typeof a !== 'string' || typeof b !== 'string') return "Invalid input: Please enter just two strings";
 
     return str1 + str2 
+  },
+  getUserRepo: function async (username) {
+    const url = `https://api.github.com/users/${username}/repos`;
+    let result = [];
+    await axios.get(url)
+        .then(function (response) {
+            response.data.forEach(value => result.push(value.name));
+            return result;
+        })
+        .catch(function (error) {
+            return error;
+        });
+        console.log(result);
+        return result;
   }
 }
 
