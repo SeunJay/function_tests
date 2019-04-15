@@ -75,7 +75,7 @@ const functions = {
 
     return str1 + str2 
   },
-  getUserRepo: function async (username) {
+  getUserRepo: async function (username) {
     const url = `https://api.github.com/users/${username}/repos`;
     let result = [];
     await axios.get(url)

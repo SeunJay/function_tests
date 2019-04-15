@@ -129,7 +129,7 @@ test('Arguments that are not strings should return ""Invalid input: Please enter
 
 describe('Check repos from git api', () => {
   test('Should return user repos', async () => {
-      await getUserRepo('SeunJay')
+      await functions.getUserRepo('SeunJay')
           .then(response => {
               expect(response).toContain(("myRepo", "Hush"));
           })
