@@ -127,6 +127,16 @@ test('Arguments that are not strings should return ""Invalid input: Please enter
   expect(functions.stringConcat("Seun, 1")).toBe("Invalid input: Please enter just two strings");
 });
 
+describe('Check repos from git api', () => {
+  test('Should return user repos', async () => {
+      await getUserRepo('SeunJay')
+          .then(response => {
+              expect(response).toContain(("myRepo", "Hush"));
+          })
+  });
+ 
+});
+
 
 
 
